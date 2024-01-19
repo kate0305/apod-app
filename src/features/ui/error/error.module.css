@@ -1,0 +1,51 @@
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  height: calc(100vh - 70px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 40px;
+  font-family: 'Space Mono', monospace;
+}
+
+.title {
+  padding-top: 50px;
+  font-size: 250px;
+  font-weight: 700;
+  background-image: url('../../../../public/images/img/bg.jpg');
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.subtitle {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 800px) {
+  .title {
+    font-size: 100px;
+  }
+  .subtitle {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and  (max-width: 320px) {
+  .title {
+    font-size: 90px;
+  }
+}
