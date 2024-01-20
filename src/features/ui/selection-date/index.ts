@@ -1,1 +1,1 @@
-export { PhotoOfDay } from './selection-date';
+export { SelectionDate } from './selection-date';
