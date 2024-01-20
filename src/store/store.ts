@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { nasaApi } from '../services/nasa-service';
+import { photosReduser } from './redusers/photos-slice';
 
 export const store = configureStore({
   reducer: {
+    photosReduser,
     [nasaApi.reducerPath]: nasaApi.reducer,
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(nasaApi.middleware),
