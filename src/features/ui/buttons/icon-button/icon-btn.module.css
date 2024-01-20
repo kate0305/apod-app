@@ -1,0 +1,8 @@
+.btn {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  outline: 0;
+  border: none;
+  transition: background-image 0.1s ease;
+  cursor: pointer;
+}

@@ -5,7 +5,7 @@ const BASE_URL = 'https://api.nasa.gov/planetary/apod';
 const API_KEY = import.meta.env.VITE_NASA_API_KEY;
 
 export const nasaApi = createApi({
-  reducerPath: 'pokemonApi',
+  reducerPath: 'nasaApi',
   baseQuery: fetchBaseQuery({ baseUrl: BASE_URL }),
   endpoints: (builder) => ({
     

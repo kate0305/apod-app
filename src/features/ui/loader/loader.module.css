@@ -29,14 +29,14 @@
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .preloader {
     width: 44px;
     height: 44px;
   }
 }
 
-@media (max-width: 320px) {
+@media screen and (max-width: 320px) {
   .preloader {
     width: 22px;
     height: 22px;
