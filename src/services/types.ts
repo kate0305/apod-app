@@ -1,6 +1,6 @@
 export type SelectedPeriodReq = {
-  startDay: string;
-  endDay: string;
+  startDate: string;
+  endDate: string;
 };
 
 export type PhotoResp = {

@@ -8,6 +8,7 @@ export const nasaApi = createApi({
   reducerPath: 'pokemonApi',
   baseQuery: fetchBaseQuery({ baseUrl: BASE_URL }),
   endpoints: (builder) => ({
+    
     getTodayPhoto: builder.query<PhotoResp, void>({
       query: () => ({
         url: '',
@@ -21,13 +22,13 @@ export const nasaApi = createApi({
       }),
     }),
     getPhotosOfSelectedPeriod: builder.query<PhotoResp[], SelectedPeriodReq>({
-      query: ({ startDay, endDay }) => ({
+      query: ({ startDate, endDate }) => ({
         url: '',
-        params: { api_key: API_KEY, start_date: startDay, end_date: endDay },
+        params: { api_key: API_KEY, start_date: startDate, end_date: endDate },
       }),
     }),
   }),
 });
 
-export const { useGetTodayPhotoQuery, useGetPhotoOfSelectedDayQuery, useGetPhotosOfSelectedPeriodQuery } =
+export const { useGetTodayPhotoQuery, useLazyGetPhotoOfSelectedDayQuery, useLazyGetPhotosOfSelectedPeriodQuery } =
   nasaApi;
